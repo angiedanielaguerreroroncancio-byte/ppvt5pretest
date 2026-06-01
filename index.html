@@ -81,10 +81,10 @@ body{background:#f4f6f9;min-height:100vh;display:flex;flex-direction:column;alig
     </div>
   </div>
   <div class="card">
-    <div class="field"><label>Nombre del evaluado *</label><input id="inp-nombre" type="text" placeholder="Ej: María García"></div>
-    <div class="field"><label>Fecha de evaluación *</label><input id="inp-fecha" type="date"></div>
-    <div class="field"><label>Evaluador</label><input id="inp-evaluador" type="text" placeholder="Ej: Lic. Juan López"></div>
-    <div class="field" style="margin-bottom:0"><label>Edad del evaluado (años)</label><input id="inp-edad" type="number" placeholder="Ej: 7" min="2" max="90"></div>
+    <div class="field"><label>Nombre y apellido *</label><input id="inp-nombre" type="text" placeholder="Ej: ..."></div>
+    <div class="field"><label>Fecha *</label><input id="inp-fecha" type="date"></div>
+   
+    <div class="field" style="margin-bottom:0"><label>Edad (años)</label><input id="inp-edad" type="number" placeholder="Ej: 7" min="2" max="90"></div>
   </div>
   <button class="btn btn-primary" onclick="iniciarTest()">▶ Iniciar evaluación</button>
   <button class="btn btn-secondary" onclick="mostrarDB()">📊 Ver registros guardados</button>
@@ -119,8 +119,7 @@ body{background:#f4f6f9;min-height:100vh;display:flex;flex-direction:column;alig
     <div class="result-score-sub">Puntaje bruto (respuestas correctas)</div>
   </div>
   <div class="metrics-grid">
-    <div class="metric-box"><div class="metric-val" id="res-ok">0</div><div class="metric-key">Correctas</div></div>
-    <div class="metric-box"><div class="metric-val" id="res-err">0</div><div class="metric-key">Incorrectas</div></div>
+   
     <div class="metric-box"><div class="metric-val" id="res-pct">0%</div><div class="metric-key">% de acierto</div></div>
     <div class="metric-box"><div class="metric-val" id="res-edad-val">—</div><div class="metric-key">Edad evaluado</div></div>
   </div>
